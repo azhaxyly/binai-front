@@ -59,6 +59,19 @@
         </button>
       </nav>
     </header>
+    <!-- Login Modal -->
+    <div id="login-modal" class="login-modal">
+      <div class="login-modal__content">
+        <button class="login-modal__close" aria-label="Закрыть">×</button>
+        <form class="login-modal__form">
+          <h3 class="login-modal__title">Вход</h3>
+          <input type="text" class="login-modal__input" placeholder="Email" required />
+          <input type="password" class="login-modal__input" placeholder="Пароль" required />
+          <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+          <button type="submit" class="button login-modal__button">Войти</button>
+        </form>
+      </div>
+    </div>
     <section class="hero">
       <div class="hero__container">
         <!-- Desktop hero images -->
@@ -685,6 +698,9 @@
         const navClose = document.querySelector(".nav__close");
         const navList = document.querySelector(".nav__list");
         const navLinks = document.querySelectorAll(".nav__link");
+        const signinButton = document.querySelector(".button--signin");
+        const loginModal = document.getElementById("login-modal");
+        const loginClose = document.querySelector(".login-modal__close");
 
         // Ensure close button is hidden initially
         if (navClose) {
@@ -719,6 +735,27 @@
           });
         });
 
+        if (signinButton) {
+          signinButton.addEventListener("click", function () {
+            loginModal.style.display = "flex";
+            document.body.style.overflow = "hidden";
+          });
+        }
+
+        if (loginClose) {
+          loginClose.addEventListener("click", function () {
+            loginModal.style.display = "none";
+            document.body.style.overflow = "";
+          });
+        }
+
+        document.addEventListener("click", function (event) {
+          if (event.target === loginModal) {
+            loginModal.style.display = "none";
+            document.body.style.overflow = "";
+          }
+        });
+
         // Close menu when clicking outside
         document.addEventListener("click", function (event) {
           const isClickInside =
@@ -732,5 +769,6 @@
         });
       });
     </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </body>
 </html>
