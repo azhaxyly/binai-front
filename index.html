@@ -1,736 +1,611 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <header class="header">
-      <nav class="nav">
-        <img src="assets/images/LOGO.png" alt="Logo" class="nav__logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <title>BinAI</title>
+
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <img src="assets/images/LOGO.png" alt="Logo" class="nav__logo" />
+
+      <div>
+        <ul class="nav__list">
+          <button class="nav__close" aria-label="Close navigation">×</button>
+          <li class="nav__item">
+            <a href="#functions" class="nav__link">Функции</a>
+          </li>
+          <li class="nav__item">
+            <a href="#advantages" class="nav__link">Преимущества</a>
+          </li>
+          <li class="nav__item">
+            <a href="#testimonials" class="nav__link">Отзывы</a>
+          </li>
+          <li class="nav__item">
+            <a href="#connect" class="nav__link">Как подключиться?</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">Оставить заявку</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <button class="button button--signin">Войти</button>
+      </div>
+      <button class="nav__toggle" aria-label="Toggle navigation">
+        <img src="assets/images/menu.svg" alt="Menu" class="nav__toggle-icon" />
+      </button>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="hero__container">
+      <!-- Desktop hero images -->
+      <div class="hero__images hero__images--desktop">
+        <div class="hero__left-top">
+          <div class="hero__left-top-1">
+            <img src="assets/images/hero-left-top-3.svg" alt="" />
+          </div>
+          <div class="hero__left-top-2">
+            <img src="assets/images/hero-left-top-2.svg" alt="" />
+          </div>
+          <div class="hero__left-top-3">
+            <img src="assets/images/hero-left-top-1.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="hero__right-top">
+          <img src="assets/images/hero-right-top.svg" alt="" />
+        </div>
+
+        <div class="hero__right-bottom">
+          <img src="assets/images/hero-right-btm.svg" alt="" />
+        </div>
+
+        <div class="hero__left-bottom">
+          <img src="assets/images/hero-left-btm.svg" alt="" />
+        </div>
+      </div>
+
+      <!-- Mobile hero images -->
+      <div class="hero__images hero__images--mobile">
+        <div class="hero__left-top">
+          <img src="assets/images/mobile/icon-card.svg" alt="Timer" />
+        </div>
+        <div class="hero__right-top">
+          <img src="assets/images/mobile/time-card.svg" alt="Timer" />
+        </div>
+        <div class="hero__left-bottom">
+          <img src="assets/images/mobile/number-card.svg" alt="Price" />
+        </div>
+        <div class="hero__right-bottom">
+          <img src="assets/images/mobile/stats-card.svg" alt="Statistics" />
+        </div>
+      </div>
+
+      <div class="hero__content">
+        <div class="icon icon--main">
+          <img src="assets/images/lightning.png" alt="lightning" />
+        </div>
+        <div class="hero__text">
+          <h1 class="hero__title">Технологии ИИ в тендерах</h1>
+          <p class="hero__description">
+            Система имеет доступ к данным 120 площадок и находит подходящие
+            тендеры на основе данных вашей компании
+          </p>
+        </div>
         <div>
-          <ul class="nav__list">
-            <button class="nav__close" aria-label="Close navigation">×</button>
-            <li class="nav__item">
-              <a href="#functions" class="nav__link">Функции</a>
-            </li>
-            <li class="nav__item">
-              <a href="#advantages" class="nav__link">Преимущества</a>
-            </li>
-            <li class="nav__item">
-              <a href="#testimonials" class="nav__link">Отзывы</a>
-            </li>
-            <li class="nav__item">
-              <a href="#connect" class="nav__link">Как подключиться?</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contacts" class="nav__link">Оставить заявку</a>
-            </li>
-          </ul>
+          <button href="#contacts" class="button button--request">Оставить заявку</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="functions" class="functions">
+    <div class="function__container">
+      <h2 class="function__title">Как работает наша платформа</h2>
+      <div class="function__main">
+        <div class="function__background">
+          <img src="assets/images/bg/functionalities-bg.svg" alt="" class="function__background-image" />
+        </div>
+        <div class="function__elements">
+          <div class="function__element">
+            <img src="assets/images/how-it-works/hiw-1.svg" alt="" />
+            <h4 class="function__element-title">Сбор данных</h4>
+            <p>парсим тендерные площадки и анализируем данные</p>
+          </div>
+          <div class="function__element">
+            <img src="assets/images/how-it-works/hiw-2.svg" alt="" />
+            <h4 class="function__element-title">Обработка с ИИ</h4>
+            <p>анализируем спецификации,а не просто ключевые слова</p>
+          </div>
+          <div class="function__element">
+            <img src="assets/images/how-it-works/hiw-3.svg" alt="" />
+            <h4 class="function__element-title">Персонализация</h4>
+            <p>модель обучается под данные компании</p>
+          </div>
+          <div class="function__element">
+            <img src="assets/images/how-it-works/hiw-4.svg" alt="" />
+            <h4 class="function__element-title">Выдача тендеров</h4>
+            <p>готовые рекомендации в личном кабинете</p>
+          </div>
+        </div>
+        <div class="function__presentation">
+          <img src="assets/images/functionalities-pre.png" alt="functionalities-presentation"
+            class="function__presentation-image" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="suitable" class="suitable">
+    <div class="suitable__container">
+      <h2>Кому подойдет наша платформа?</h2>
+      <div class="suitable__elements">
+        <div class="suitable__element">
+          <div class="suitable__element-title">
+            <div class="suitable__element-indicator suitable__element-indicator--blue"></div>
+            <h4>Поставщикам</h4>
+          </div>
+          <p>
+            Прекратите бесконечный мониторинг десятков сайтов — система найдет
+            релевантные тендеры по вашей продукции за вас
+          </p>
+          <div>
+            <div class="suitable__stats">
+              <img src="assets/images/suitable-dot-blue.png" alt="blue-dot" class="suitable-blue-dot" />
+              <h4>155</h4>
+            </div>
+            <p>подходящих тендеров в неделю</p>
+          </div>
+        </div>
+        <div class="suitable__element">
+          <div class="suitable__element-title">
+            <div class="suitable__element-indicator suitable__element-indicator--green"></div>
+            <h4>Подрядчикам</h4>
+          </div>
+          <p>
+            Больше никаких упущенных возможностей. Мы учитываем даже
+            технические нюансы, а не просто ключевые слова
+          </p>
+          <div>
+            <div class="suitable__stats">
+              <h4 class="suitable__stats-plus">+</h4>
+              <h4>60%</h4>
+            </div>
+            <p>количество заявок на тендеры</p>
+          </div>
+        </div>
+        <div class="suitable__element">
+          <div class="suitable__element-title">
+            <div class="suitable__element-indicator suitable__element-indicator--yellow"></div>
+            <h4>Производителям</h4>
+          </div>
+          <p>
+            Неважно, что вы производите — от бетона до оборудования — ИИ
+            подберет тендеры, где ваши товары действительно нужны
+          </p>
+          <div>
+            <div class="suitable__stats">
+              <img src="assets/images/suitable-dot-yellow.png" alt="yellow-dot" />
+              <h4>120</h4>
+            </div>
+            <p>релевантных тендеров на вашу сферу</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="advantages" class="advantages">
+    <!-- Desktop advantages section -->
+    <div class="advantages__container advantages__container--desktop">
+      <div class="advantages__header">
+        <div>
+          <h2>Преимущества</h2>
         </div>
         <div>
-          <button class="button button--signin">Войти</button>
+          <h4 class="advantages__subtitle">
+            В чем отличие нашего продукта от других
+          </h4>
         </div>
-        <button class="nav__toggle" aria-label="Toggle navigation">
-          <img
-            src="assets/images/menu.svg"
-            alt="Menu"
-            class="nav__toggle-icon"
-          />
-        </button>
-      </nav>
-    </header>
-    <section class="hero">
-      <div class="hero__container">
-        <!-- Desktop hero images -->
-        <div class="hero__images hero__images--desktop">
-          <div class="hero__left-top">
-            <div class="hero__left-top-1">
-              <img src="assets/images/hero-left-top-3.svg" alt="" />
-            </div>
-            <div class="hero__left-top-2">
-              <img src="assets/images/hero-left-top-2.svg" alt="" />
-            </div>
-            <div class="hero__left-top-3">
-              <img src="assets/images/hero-left-top-1.svg" alt="" />
-            </div>
-          </div>
-
-          <div class="hero__right-top">
-            <img src="assets/images/hero-right-top.svg" alt="" />
-          </div>
-
-          <div class="hero__right-bottom">
-            <img src="assets/images/hero-right-btm.svg" alt="" />
-          </div>
-
-          <div class="hero__left-bottom">
-            <img src="assets/images/hero-left-btm.svg" alt="" />
-          </div>
-        </div>
-
-        <!-- Mobile hero images -->
-        <div class="hero__images hero__images--mobile">
-          <div class="hero__left-top">
-            <img src="assets/images/mobile/icon-card.svg" alt="Timer" />
-          </div>
-          <div class="hero__right-top">
-            <img src="assets/images/mobile/time-card.svg" alt="Timer" />
-          </div>
-          <div class="hero__left-bottom">
-            <img src="assets/images/mobile/number-card.svg" alt="Price" />
-          </div>
-          <div class="hero__right-bottom">
-            <img src="assets/images/mobile/stats-card.svg" alt="Statistics" />
-          </div>
-        </div>
-
-        <div class="hero__content">
-          <div class="icon icon--main">
-            <img src="assets/images/lightning.png" alt="lightning" />
-          </div>
-          <div class="hero__text">
-            <h1 class="hero__title">Технологии ИИ в тендерах</h1>
-            <p class="hero__description">
-              Система имеет доступ к данным 120 площадок и находит подходящие
-              тендеры на основе данных вашей компании
-            </p>
-          </div>
-          <div>
-            <button href="#contacts" class="button button--request" >Оставить заявку</button>
-          </div>
+        <div class="advantages__icon">
+          <img src="assets/images/adv-header.svg" alt="star" />
         </div>
       </div>
-    </section>
-    <section id="functions" class="functions">
-      <div class="function__container">
-        <h2 class="function__title">Как работает наша платформа</h2>
-        <div class="function__main">
-          <div class="function__background">
-            <img
-              src="assets/images/bg/functionalities-bg.svg"
-              alt=""
-              class="function__background-image"
-            />
+      <div class="advantages__row advantages__row--top">
+        <div class="advantages__element advantages__element--left">
+          <div class="advantages__element-image advantages__element-image--top-right">
+            <img src="assets/images/adv-elem-1.svg" alt="" />
           </div>
-          <div class="function__elements">
-            <div class="function__element">
-              <img src="assets/images/how-it-works/hiw-1.svg" alt="" />
-              <h4 class="function__element-title">Сбор данных</h4>
-              <p>парсим тендерные площадки и анализируем данные</p>
-            </div>
-            <div class="function__element">
-              <img src="assets/images/how-it-works/hiw-2.svg" alt="" />
-              <h4 class="function__element-title">Обработка с ИИ</h4>
-              <p>анализируем спецификации,а не просто ключевые слова</p>
-            </div>
-            <div class="function__element">
-              <img src="assets/images/how-it-works/hiw-3.svg" alt="" />
-              <h4 class="function__element-title">Персонализация</h4>
-              <p>модель обучается под данные компании</p>
-            </div>
-            <div class="function__element">
-              <img src="assets/images/how-it-works/hiw-4.svg" alt="" />
-              <h4 class="function__element-title">Выдача тендеров</h4>
-              <p>готовые рекомендации в личном кабинете</p>
-            </div>
-          </div>
-          <div class="function__presentation">
-            <img
-              src="assets/images/functionalities-pre.png"
-              alt="functionalities-presentation"
-              class="function__presentation-image"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="suitable" class="suitable">
-      <div class="suitable__container">
-        <h2>Кому подойдет наша платформа?</h2>
-        <div class="suitable__elements">
-          <div class="suitable__element">
-            <div class="suitable__element-title">
-              <div
-                class="suitable__element-indicator suitable__element-indicator--blue"
-              ></div>
-              <h4>Поставщикам</h4>
-            </div>
+          <div class="advantages__element-title">
+            <h4>Глубокий анализ</h4>
             <p>
-              Прекратите бесконечный мониторинг десятков сайтов — система найдет
-              релевантные тендеры по вашей продукции за вас
+              Мы используем ИИ для анализа тендеров, а не просто ключевые
+              слова
             </p>
-            <div>
-              <div class="suitable__stats">
-                <img
-                  src="assets/images/suitable-dot-blue.png"
-                  alt="blue-dot"
-                  class="suitable-blue-dot"
-                />
-                <h4>155</h4>
-              </div>
-              <p>подходящих тендеров в неделю</p>
-            </div>
           </div>
-          <div class="suitable__element">
-            <div class="suitable__element-title">
-              <div
-                class="suitable__element-indicator suitable__element-indicator--green"
-              ></div>
-              <h4>Подрядчикам</h4>
-            </div>
-            <p>
-              Больше никаких упущенных возможностей. Мы учитываем даже
-              технические нюансы, а не просто ключевые слова
+        </div>
+        <div class="advantages__element advantages__element--right">
+          <div class="advantages__element-image advantages__element-image--top-right">
+            <img src="assets/images/adv-elem-2.svg" alt="" />
+          </div>
+          <div class="advantages__element-title">
+            <h4>Индивидуальная настройка</h4>
+            <p>модель адаптируется под данные компании</p>
+          </div>
+        </div>
+      </div>
+      <div class="advantages__row">
+        <div class="advantages__element advantages__element--right">
+          <div class="advantages__element-image advantages__element-image--bottom-right">
+            <img src="assets/images/adv-elem-3.svg" alt="" />
+          </div>
+          <div class="advantages__element-logo">
+            <img src="assets/images/LOGO.png" alt="" />
+          </div>
+          <div class="advantages__element-title advantages__element-title--small">
+            <h4>Гибкая аналитика</h4>
+            <p>персональная статистика по запросу пользователя</p>
+          </div>
+        </div>
+        <div class="advantages__element advantages__element--left">
+          <div class="advantages__element-image advantages__element-image--top-left">
+            <img src="assets/images/adv-elem-5.svg" alt="" />
+          </div>
+          <div class="advantages__element-image advantages__element-image--right">
+            <img src="assets/images/adv-elem-4.svg" alt="" />
+          </div>
+          <div class="advantages__element-title advantages__element-title--medium">
+            <h4>Автоматизация</h4>
+            <p>экономия времени, исключение рутинного мониторинга</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile advantages section -->
+    <div class="advantages__container advantages__container--mobile">
+      <div class="advantages__header">
+        <div>
+          <h2>Преимущества</h2>
+        </div>
+        <div>
+          <h4 class="advantages__subtitle">
+            В чем отличие нашего продукта от других
+          </h4>
+        </div>
+      </div>
+      <div class="advantages__list">
+        <div class="advantages__list-item">
+          <div class="advantages__list-icon">
+            <img src="assets/images/mobile/advantages/deep-analysis.svg" alt="Глубокий анализ" />
+          </div>
+          <div class="advantages__list-content">
+            <h4 class="advantages__list-title">Глубокий анализ</h4>
+            <p class="advantages__list-text">
+              Мы используем ИИ для анализа тендеров, а не просто ключевые
+              слова
             </p>
-            <div>
-              <div class="suitable__stats">
-                <h4 class="suitable__stats-plus">+</h4>
-                <h4>60%</h4>
-              </div>
-              <p>количество заявок на тендеры</p>
-            </div>
           </div>
-          <div class="suitable__element">
-            <div class="suitable__element-title">
-              <div
-                class="suitable__element-indicator suitable__element-indicator--yellow"
-              ></div>
-              <h4>Производителям</h4>
-            </div>
-            <p>
-              Неважно, что вы производите — от бетона до оборудования — ИИ
-              подберет тендеры, где ваши товары действительно нужны
+        </div>
+
+        <div class="advantages__list-item">
+          <div class="advantages__list-icon">
+            <img src="assets/images/mobile/advantages/custom.svg" alt="Индивидуальная настройка" />
+          </div>
+          <div class="advantages__list-content">
+            <h4 class="advantages__list-title">Индивидуальная настройка</h4>
+            <p class="advantages__list-text">
+              Модель адаптируется под данные компании
             </p>
-            <div>
-              <div class="suitable__stats">
-                <img
-                  src="assets/images/suitable-dot-yellow.png"
-                  alt="yellow-dot"
-                />
-                <h4>120</h4>
-              </div>
-              <p>релевантных тендеров на вашу сферу</p>
-            </div>
+          </div>
+        </div>
+
+        <div class="advantages__list-item">
+          <div class="advantages__list-icon">
+            <img src="assets/images/mobile/advantages/analytics.svg" alt="Гибкая аналитика" />
+          </div>
+          <div class="advantages__list-content">
+            <h4 class="advantages__list-title">Гибкая аналитика</h4>
+            <p class="advantages__list-text">
+              Персональная статистика по запросу пользователя
+            </p>
+          </div>
+        </div>
+
+        <div class="advantages__list-item">
+          <div class="advantages__list-icon">
+            <img src="assets/images/mobile/advantages/automation.svg" alt="Автоматизация" />
+          </div>
+          <div class="advantages__list-content">
+            <h4 class="advantages__list-title">Автоматизация</h4>
+            <p class="advantages__list-text">
+              Экономия времени, исключение рутинного мониторинга
+            </p>
           </div>
         </div>
       </div>
-    </section>
-    <section id="advantages" class="advantages">
-      <!-- Desktop advantages section -->
-      <div class="advantages__container advantages__container--desktop">
-        <div class="advantages__header">
-          <div>
-            <h2>Преимущества</h2>
-          </div>
-          <div>
-            <h4 class="advantages__subtitle">
-              В чем отличие нашего продукта от других
-            </h4>
-          </div>
-          <div class="advantages__icon">
-            <img src="assets/images/adv-header.svg" alt="star" />
-          </div>
-        </div>
-        <div class="advantages__row advantages__row--top">
-          <div class="advantages__element advantages__element--left">
-            <div
-              class="advantages__element-image advantages__element-image--top-right"
-            >
-              <img src="assets/images/adv-elem-1.svg" alt="" />
-            </div>
-            <div class="advantages__element-title">
-              <h4>Глубокий анализ</h4>
-              <p>
-                Мы используем ИИ для анализа тендеров, а не просто ключевые
-                слова
-              </p>
-            </div>
-          </div>
-          <div class="advantages__element advantages__element--right">
-            <div
-              class="advantages__element-image advantages__element-image--top-right"
-            >
-              <img src="assets/images/adv-elem-2.svg" alt="" />
-            </div>
-            <div class="advantages__element-title">
-              <h4>Индивидуальная настройка</h4>
-              <p>модель адаптируется под данные компании</p>
-            </div>
-          </div>
-        </div>
-        <div class="advantages__row">
-          <div class="advantages__element advantages__element--right">
-            <div
-              class="advantages__element-image advantages__element-image--bottom-right"
-            >
-              <img src="assets/images/adv-elem-3.svg" alt="" />
-            </div>
-            <div class="advantages__element-logo">
-              <img src="assets/images/LOGO.png" alt="" />
-            </div>
-            <div
-              class="advantages__element-title advantages__element-title--small"
-            >
-              <h4>Гибкая аналитика</h4>
-              <p>персональная статистика по запросу пользователя</p>
-            </div>
-          </div>
-          <div class="advantages__element advantages__element--left">
-            <div
-              class="advantages__element-image advantages__element-image--top-left"
-            >
-              <img src="assets/images/adv-elem-5.svg" alt="" />
-            </div>
-            <div
-              class="advantages__element-image advantages__element-image--right"
-            >
-              <img src="assets/images/adv-elem-4.svg" alt="" />
-            </div>
-            <div
-              class="advantages__element-title advantages__element-title--medium"
-            >
-              <h4>Автоматизация</h4>
-              <p>экономия времени, исключение рутинного мониторинга</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
+  </section>
+  <section id="testimonials" class="testimonials">
+    <div class="testimonials__container">
+      <h2 class="testimonials__title">
+        Люди из разных сфер уже используют нашу платформу
+      </h2>
+      <div class="testimonials__grid">
+        <!-- Column 1 -->
+        <div class="testimonials__column">
+          <div class="testimonial">
+            <p class="testimonial__comment">
+              "Отличный сервис! Искала удобный инструмент для мониторинга
+              тендеров – теперь система сама подбирает для нас лучшие
+              варианты. Экономит массу времени!"
+            </p>
+            <div class="testimonial__badge">
+              <img src="assets/images/stars-5.svg" alt="5 stars" class="testimonial__stars" />
 
-      <!-- Mobile advantages section -->
-      <div class="advantages__container advantages__container--mobile">
-        <div class="advantages__header">
-          <div>
-            <h2>Преимущества</h2>
-          </div>
-          <div>
-            <h4 class="advantages__subtitle">
-              В чем отличие нашего продукта от других
-            </h4>
-          </div>
-        </div>
-        <div class="advantages__list">
-          <div class="advantages__list-item">
-            <div class="advantages__list-icon">
-              <img
-                src="assets/images/mobile/advantages/deep-analysis.svg"
-                alt="Глубокий анализ"
-              />
-            </div>
-            <div class="advantages__list-content">
-              <h4 class="advantages__list-title">Глубокий анализ</h4>
-              <p class="advantages__list-text">
-                Мы используем ИИ для анализа тендеров, а не просто ключевые
-                слова
-              </p>
-            </div>
-          </div>
-
-          <div class="advantages__list-item">
-            <div class="advantages__list-icon">
-              <img
-                src="assets/images/mobile/advantages/custom.svg"
-                alt="Индивидуальная настройка"
-              />
-            </div>
-            <div class="advantages__list-content">
-              <h4 class="advantages__list-title">Индивидуальная настройка</h4>
-              <p class="advantages__list-text">
-                Модель адаптируется под данные компании
-              </p>
-            </div>
-          </div>
-
-          <div class="advantages__list-item">
-            <div class="advantages__list-icon">
-              <img
-                src="assets/images/mobile/advantages/analytics.svg"
-                alt="Гибкая аналитика"
-              />
-            </div>
-            <div class="advantages__list-content">
-              <h4 class="advantages__list-title">Гибкая аналитика</h4>
-              <p class="advantages__list-text">
-                Персональная статистика по запросу пользователя
-              </p>
-            </div>
-          </div>
-
-          <div class="advantages__list-item">
-            <div class="advantages__list-icon">
-              <img
-                src="assets/images/mobile/advantages/automation.svg"
-                alt="Автоматизация"
-              />
-            </div>
-            <div class="advantages__list-content">
-              <h4 class="advantages__list-title">Автоматизация</h4>
-              <p class="advantages__list-text">
-                Экономия времени, исключение рутинного мониторинга
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="testimonials" class="testimonials">
-      <div class="testimonials__container">
-        <h2 class="testimonials__title">
-          Люди из разных сфер уже используют нашу платформу
-        </h2>
-        <div class="testimonials__grid">
-          <!-- Column 1 -->
-          <div class="testimonials__column">
-            <div class="testimonial">
-              <p class="testimonial__comment">
-                "Отличный сервис! Искала удобный инструмент для мониторинга
-                тендеров – теперь система сама подбирает для нас лучшие
-                варианты. Экономит массу времени!"
-              </p>
-              <div class="testimonial__badge">
-                <img
-                  src="assets/images/stars-5.svg"
-                  alt="5 stars"
-                  class="testimonial__stars"
-                />
-
-                <div class="testimonial__profile">
-                  <img
-                    src="assets/images/testimonial/aruzhan.png"
-                    alt="Аружан Темирова"
-                    class="testimonial__avatar"
-                  />
-                  <div class="testimonial__info">
-                    <h4 class="testimonial__name">Аружан Темирова</h4>
-                    <p class="testimonial__position">Сфера торговли</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonial">
-              <p class="testimonial__comment">
-                "ИИ сам подбирает нужные тендеры, исключая рутину. Работает
-                быстро и точно!"
-              </p>
-              <div class="testimonial__badge">
-                <img
-                  src="assets/images/stars-5.svg"
-                  alt="5 stars"
-                  class="testimonial__stars"
-                />
-                <div class="testimonial__profile">
-                  <img
-                    src="assets/images/testimonial/yerbolat.png"
-                    alt="Ерболат Сейдахметов"
-                    class="testimonial__avatar"
-                  />
-                  <div class="testimonial__info">
-                    <h4 class="testimonial__name">Ерболат Сейдахметов</h4>
-                    <p class="testimonial__position">Строительная компания</p>
-                  </div>
+              <div class="testimonial__profile">
+                <img src="assets/images/testimonial/aruzhan.png" alt="Аружан Темирова" class="testimonial__avatar" />
+                <div class="testimonial__info">
+                  <h4 class="testimonial__name">Аружан Темирова</h4>
+                  <p class="testimonial__position">Сфера торговли</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Column 2 -->
-          <div class="testimonials__column">
-            <div class="testimonial">
-              <p class="testimonial__comment">
-                "Система анализирует тендеры лучше обычных поисковиков. Уже
-                заключили несколько крупных сделок!"
-              </p>
-              <div class="testimonial__badge">
-                <img
-                  src="assets/images/stars-5.svg"
-                  alt="5 stars"
-                  class="testimonial__stars"
-                />
-                <div class="testimonial__profile">
-                  <img
-                    src="assets/images/testimonial/zhanna.png"
-                    alt="Жанна Байжанова"
-                    class="testimonial__avatar"
-                  />
-                  <div class="testimonial__info">
-                    <h4 class="testimonial__name">Жанна Байжанова</h4>
-                    <p class="testimonial__position">Логистика и транспорт</p>
-                  </div>
+          <div class="testimonial">
+            <p class="testimonial__comment">
+              "ИИ сам подбирает нужные тендеры, исключая рутину. Работает
+              быстро и точно!"
+            </p>
+            <div class="testimonial__badge">
+              <img src="assets/images/stars-5.svg" alt="5 stars" class="testimonial__stars" />
+              <div class="testimonial__profile">
+                <img src="assets/images/testimonial/yerbolat.png" alt="Ерболат Сейдахметов"
+                  class="testimonial__avatar" />
+                <div class="testimonial__info">
+                  <h4 class="testimonial__name">Ерболат Сейдахметов</h4>
+                  <p class="testimonial__position">Строительная компания</p>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div class="testimonial">
-              <p class="testimonial__comment">
-                "Невероятно удобно! Система обучается под наши потребности,
-                фильтруя ненужные тендеры и предлагая самые релевантные.
-                Работает точно и быстро!"
-              </p>
-              <div class="testimonial__badge">
-                <img
-                  src="assets/images/stars-5.svg"
-                  alt="5 stars"
-                  class="testimonial__stars"
-                />
-                <div class="testimonial__profile">
-                  <img
-                    src="assets/images/testimonial/dias.png"
-                    alt="Диас Жунусов"
-                    class="testimonial__avatar"
-                  />
-                  <div class="testimonial__info">
-                    <h4 class="testimonial__name">Диас Жунусов</h4>
-                    <p class="testimonial__position">Поставки оборудования</p>
-                  </div>
+        <!-- Column 2 -->
+        <div class="testimonials__column">
+          <div class="testimonial">
+            <p class="testimonial__comment">
+              "Система анализирует тендеры лучше обычных поисковиков. Уже
+              заключили несколько крупных сделок!"
+            </p>
+            <div class="testimonial__badge">
+              <img src="assets/images/stars-5.svg" alt="5 stars" class="testimonial__stars" />
+              <div class="testimonial__profile">
+                <img src="assets/images/testimonial/zhanna.png" alt="Жанна Байжанова" class="testimonial__avatar" />
+                <div class="testimonial__info">
+                  <h4 class="testimonial__name">Жанна Байжанова</h4>
+                  <p class="testimonial__position">Логистика и транспорт</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Column 3 -->
-          <div class="testimonials__column">
-            <div class="testimonial">
-              <p class="testimonial__comment">
-                Раньше упускал важные тендеры, теперь всё приходит в личный
-                кабинет. Иногда подгружает медленно, но всё же удобно
-              </p>
-              <div class="testimonial__badge">
-                <img
-                  src="assets/images/stars-5.svg"
-                  alt="5 stars"
-                  class="testimonial__stars"
-                />
-                <div class="testimonial__profile">
-                  <img
-                    src="assets/images/testimonial/marat.png"
-                    alt="Марат Куанышбаев"
-                    class="testimonial__avatar"
-                  />
-                  <div class="testimonial__info">
-                    <h4 class="testimonial__name">Марат Куанышбаев</h4>
-                    <p class="testimonial__position">
-                      Поставщик стройматериалов
-                    </p>
-                  </div>
+          <div class="testimonial">
+            <p class="testimonial__comment">
+              "Невероятно удобно! Система обучается под наши потребности,
+              фильтруя ненужные тендеры и предлагая самые релевантные.
+              Работает точно и быстро!"
+            </p>
+            <div class="testimonial__badge">
+              <img src="assets/images/stars-5.svg" alt="5 stars" class="testimonial__stars" />
+              <div class="testimonial__profile">
+                <img src="assets/images/testimonial/dias.png" alt="Диас Жунусов" class="testimonial__avatar" />
+                <div class="testimonial__info">
+                  <h4 class="testimonial__name">Диас Жунусов</h4>
+                  <p class="testimonial__position">Поставки оборудования</p>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div class="testimonial__image-wrapper">
-              <img
-                src="assets/images/testimonial/test-main.png"
-                alt="keyboard"
-                class="testimonial__image"
-              />
+        <!-- Column 3 -->
+        <div class="testimonials__column">
+          <div class="testimonial">
+            <p class="testimonial__comment">
+              Раньше упускал важные тендеры, теперь всё приходит в личный
+              кабинет. Иногда подгружает медленно, но всё же удобно
+            </p>
+            <div class="testimonial__badge">
+              <img src="assets/images/stars-5.svg" alt="5 stars" class="testimonial__stars" />
+              <div class="testimonial__profile">
+                <img src="assets/images/testimonial/marat.png" alt="Марат Куанышбаев" class="testimonial__avatar" />
+                <div class="testimonial__info">
+                  <h4 class="testimonial__name">Марат Куанышбаев</h4>
+                  <p class="testimonial__position">
+                    Поставщик стройматериалов
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="connect" class="connect">
-      <div class="connect__container">
-        <div class="connect__header">
-          <div>
-            <h2 class="connect__title">Как подключиться?</h2>
-          </div>
-          <div>
-            <h4 class="connect__subtitle">
-              Шаги для быстрого старта работы с нашей системой
-            </h4>
-          </div>
-          <div class="connect__icon">
-            <img src="assets/images/how-to-connect-icon.svg" alt="star" />
+          <div class="testimonial__image-wrapper">
+            <img src="assets/images/testimonial/test-main.png" alt="keyboard" class="testimonial__image" />
           </div>
         </div>
-        <div class="connect__steps">
-          <img
-            src="assets/images/how-to-connect-steps.png"
-            alt="steps"
-            class="connect__steps-image"
-          />
+      </div>
+    </div>
+  </section>
+
+  <section id="connect" class="connect">
+    <div class="connect__container">
+      <div class="connect__header">
+        <div>
+          <h2 class="connect__title">Как подключиться?</h2>
         </div>
-        <div class="connect__steps-mobile">
-          <img
-            src="assets/images/mobile/how-it-works/steps-mobile.svg"
-            alt="steps"
-            class="connect__steps-image"
-          />
+        <div>
+          <h4 class="connect__subtitle">
+            Шаги для быстрого старта работы с нашей системой
+          </h4>
+        </div>
+        <div class="connect__icon">
+          <img src="assets/images/how-to-connect-icon.svg" alt="star" />
         </div>
       </div>
-    </section>
-
-    <section id="contacts" class="contacts">
-      <div class="contacts__container">
-        <div class="contacts__left">
-          <div class="contacts__header">
-            <h2 class="contacts__title">Форма обратной связи</h2>
-            <h4 class="contacts__subtitle">
-              Оставьте заявку, и мы свяжемся с вами в ближайшее время
-            </h4>
-          </div>
-          <form
-            action="https://formspree.io/f/xjkwlqvl"
-            method="POST"
-            class="contacts__form"
-          >
-            <input
-              type="text"
-              name="name"
-              placeholder="Введите ваше имя"
-              required
-              class="contacts__input"
-            />
-            <input
-              type="text"
-              name="phone"
-              placeholder="Введите ваш номер телефона"
-              required
-              class="contacts__input"
-            />
-            <button type="submit" class="contacts__button">
-              Оставить заявку
-            </button>
-          </form>
-        </div>
-        <div class="contacts__right">
-          <img
-            src="assets/images/contacts-main.png"
-            alt="contact-presentation"
-            class="contacts__image"
-          />
-        </div>
+      <div class="connect__steps">
+        <img src="assets/images/how-to-connect-steps.png" alt="steps" class="connect__steps-image" />
       </div>
-    </section>
-    <footer class="footer">
-      <div class="footer__top">
-        <div class="footer__logo">
-          <img
-            src="assets/images/LOGO.png"
-            alt="logo"
-            class="footer__logo-image"
-          />
-        </div>
+      <div class="connect__steps-mobile">
+        <img src="assets/images/mobile/how-it-works/steps-mobile.svg" alt="steps" class="connect__steps-image" />
+      </div>
+    </div>
+  </section>
 
-        <div class="footer__contact">
-          <p class="footer__contact-label">Номер телефона</p>
-          <h5 class="footer__contact-value">+7 707 332 12 53</h5>
+  <section id="contacts" class="contacts">
+    <div class="contacts__container">
+      <div class="contacts__left">
+        <div class="contacts__header">
+          <h2 class="contacts__title">Форма обратной связи</h2>
+          <h4 class="contacts__subtitle">
+            Оставьте заявку, и мы свяжемся с вами в ближайшее время
+          </h4>
         </div>
-
-        <div class="footer__contact">
-          <p class="footer__contact-label">Электронная почта</p>
-          <h5 class="footer__contact-value">tenderII_best@gmail.com</h5>
-        </div>
-
-        <div class="footer__socials">
-          <a href="#" class="footer__social-link"
-            ><img
-              src="assets/images/socials/Instagram.svg"
-              alt="instagram-icon"
-              class="footer__social-icon"
-          /></a>
-          <a href="#" class="footer__social-link"
-            ><img
-              src="assets/images/socials/Whatsapp.svg"
-              alt="whatsapp-icon"
-              class="footer__social-icon"
-          /></a>
-          <a href="#" class="footer__social-link"
-            ><img
-              src="assets/images/socials/Telegram.svg"
-              alt="telegram-icon"
-              class="footer__social-icon"
-          /></a>
-          <a href="#" class="footer__social-link"
-            ><img
-              src="assets/images/socials/Youtube.svg"
-              alt="youtube-icon"
-              class="footer__social-icon"
-          /></a>
-        </div>
+        <form action="https://formspree.io/f/xjkwlqvl" method="POST" class="contacts__form">
+          <input type="text" name="name" placeholder="Введите ваше имя" required class="contacts__input" />
+          <input type="text" name="phone" placeholder="Введите ваш номер телефона" required class="contacts__input" />
+          <button type="submit" class="contacts__button">
+            Оставить заявку
+          </button>
+        </form>
+      </div>
+      <div class="contacts__right">
+        <img src="assets/images/contacts-main.png" alt="contact-presentation" class="contacts__image" />
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__logo">
+        <img src="assets/images/LOGO.png" alt="logo" class="footer__logo-image" />
       </div>
 
-      <div class="footer__bottom">
-        <p class="footer__copyright">Все права защищены © Forte 2025</p>
-        <p><a href="#" class="footer__link">Политика конфиденциальности</a></p>
+      <div class="footer__contact">
+        <p class="footer__contact-label">Номер телефона</p>
+        <h5 class="footer__contact-value">+7 707 332 12 53</h5>
       </div>
-    </footer>
 
-    <section class="footer-sm"></section>
+      <div class="footer__contact">
+        <p class="footer__contact-label">Электронная почта</p>
+        <h5 class="footer__contact-value">tenderII_best@gmail.com</h5>
+      </div>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Mobile menu toggle
-        const navToggle = document.querySelector(".nav__toggle");
-        const navClose = document.querySelector(".nav__close");
-        const navList = document.querySelector(".nav__list");
-        const navLinks = document.querySelectorAll(".nav__link");
+      <div class="footer__socials">
+        <a href="#" class="footer__social-link"><img src="assets/images/socials/Instagram.svg" alt="instagram-icon"
+            class="footer__social-icon" /></a>
+        <a href="#" class="footer__social-link"><img src="assets/images/socials/Whatsapp.svg" alt="whatsapp-icon"
+            class="footer__social-icon" /></a>
+        <a href="#" class="footer__social-link"><img src="assets/images/socials/Telegram.svg" alt="telegram-icon"
+            class="footer__social-icon" /></a>
+        <a href="#" class="footer__social-link"><img src="assets/images/socials/Youtube.svg" alt="youtube-icon"
+            class="footer__social-icon" /></a>
+      </div>
+    </div>
 
-        // Ensure close button is hidden initially
-        if (navClose) {
-          navClose.style.display = "none";
-        }
+    <div class="footer__bottom">
+      <p class="footer__copyright">Все права защищены © Forte 2025</p>
+      <p><a href="#" class="footer__link">Политика конфиденциальности</a></p>
+    </div>
+  </footer>
 
-        if (navToggle) {
-          navToggle.addEventListener("click", function () {
-            navList.classList.add("active");
-            navToggle.style.display = "none"; // Hide toggle button when menu is open
-            navClose.style.display = "block"; // Show close button when menu is open
-            document.body.style.overflow = "hidden"; // Prevent scrolling when menu is open
-          });
-        }
+  <section class="footer-sm"></section>
 
-        if (navClose) {
-          navClose.addEventListener("click", function () {
-            navList.classList.remove("active");
-            navToggle.style.display = "block"; // Show toggle button when menu is closed
-            navClose.style.display = "none"; // Hide close button when menu is closed
-            document.body.style.overflow = ""; // Restore scrolling
-          });
-        }
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Mobile menu toggle
+      const navToggle = document.querySelector(".nav__toggle");
+      const navClose = document.querySelector(".nav__close");
+      const navList = document.querySelector(".nav__list");
+      const navLinks = document.querySelectorAll(".nav__link");
 
-        // Close menu when clicking on links
-        navLinks.forEach((link) => {
-          link.addEventListener("click", function () {
-            navList.classList.remove("active");
-            navToggle.style.display = "block"; // Show toggle button when menu is closed
-            navClose.style.display = "none"; // Hide close button when menu is closed
-            document.body.style.overflow = ""; // Restore scrolling
-          });
+      // Ensure close button is hidden initially
+      if (navClose) {
+        navClose.style.display = "none";
+      }
+
+      if (navToggle) {
+        navToggle.addEventListener("click", function () {
+          navList.classList.add("active");
+          navToggle.style.display = "none"; // Hide toggle button when menu is open
+          navClose.style.display = "block"; // Show close button when menu is open
+          document.body.style.overflow = "hidden"; // Prevent scrolling when menu is open
         });
+      }
 
-        // Close menu when clicking outside
-        document.addEventListener("click", function (event) {
-          const isClickInside =
-            navList.contains(event.target) || navToggle.contains(event.target);
-          if (!isClickInside && navList.classList.contains("active")) {
-            navList.classList.remove("active");
-            navToggle.style.display = "block"; // Show toggle button when menu is closed
-            navClose.style.display = "none"; // Hide close button when menu is closed
-            document.body.style.overflow = ""; // Restore scrolling
-          }
+      if (navClose) {
+        navClose.addEventListener("click", function () {
+          navList.classList.remove("active");
+          navToggle.style.display = "block"; // Show toggle button when menu is closed
+          navClose.style.display = "none"; // Hide close button when menu is closed
+          document.body.style.overflow = ""; // Restore scrolling
+        });
+      }
+
+      // Close menu when clicking on links
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          navList.classList.remove("active");
+          navToggle.style.display = "block"; // Show toggle button when menu is closed
+          navClose.style.display = "none"; // Hide close button when menu is closed
+          document.body.style.overflow = ""; // Restore scrolling
         });
       });
-    </script>
-  </body>
+
+      // Close menu when clicking outside
+      document.addEventListener("click", function (event) {
+        const isClickInside =
+          navList.contains(event.target) || navToggle.contains(event.target);
+        if (!isClickInside && navList.classList.contains("active")) {
+          navList.classList.remove("active");
+          navToggle.style.display = "block"; // Show toggle button when menu is closed
+          navClose.style.display = "none"; // Hide close button when menu is closed
+          document.body.style.overflow = ""; // Restore scrolling
+        }
+      });
+    });
+  </script>
+  <!-- Модальное окно входа -->
+  <div id="loginModal" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close login form">×</button>
+      <h2>Вход в систему</h2>
+      <form id="loginForm" action="/login" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit" class="button button--submit">Войти</button>
+      </form>
+    </div>
+  </div>
+  <script src="assets/js/auth.js" defer></script>
+</body>
+
 </html>
