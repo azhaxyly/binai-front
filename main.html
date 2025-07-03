@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div data-include="components/header.html"></div>
+
+    <section class="search-section">
+        <div class="search-container">
+            <div class="search-input-wrapper">
+                <img src="assets/images/icons/search.png" alt="Search" class="search-icon" />
+                <input type="text" placeholder="Поиск по наименованию, описанию и ключевым параметрам"
+                    class="search-input" />
+            </div>
+        </div>
+    </section>
+
+    <section class="results-section">
+        <div class="results-container">
+            <div class="results-count">
+                Количество найденных тендеров: <span id="result-count">0</span>
+            </div>
+            <div class="results-sort">
+                <select>
+                    <option>Сначала новые</option>
+                    <option>Сначала старые</option>
+                    <option>По убыванию суммы</option>
+                    <option>По возрастанию суммы</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Фильтры ===== -->
+    <section class="filter-section hidden" id="filters">
+        <div class="filter-container">
+            <div class="filter-row">
+                <div class="filter-item">
+                    <label for="location">Место поставки</label>
+                    <select id="location">
+                        <option>Весь Казахстан</option>
+                        <option>Астана</option>
+                        <option>Алматы</option>
+                        <option>Караганда</option>
+                        <option>Костанай</option>
+                        <option>Павлодар</option>
+                        <option>Петропавловск</option>
+                    </select>
+                </div>
+
+                <div class="filter-item">
+                    <label for="status">Статус</label>
+                    <select id="status">
+                        <option>В поисках исполнителей</option>
+                        <option>Закрыт</option>
+                        <option>На модерации</option>
+                    </select>
+                </div>
+
+                <div class="filter-item">
+                    <label for="period">Период</label>
+                    <input type="text" id="period" placeholder="дд.мм.гггг - дд.мм.гггг" />
+                </div>
+
+                <div class="filter-item">
+                    <label for="sumFrom">Сумма от</label>
+                    <input type="number" id="sumFrom" placeholder="₸" />
+                </div>
+
+                <div class="filter-item">
+                    <label for="sumTo">Сумма до</label>
+                    <input type="number" id="sumTo" placeholder="₸" />
+                </div>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="btn-apply">Применить</button>
+                <button class="btn-reset">Сбросить все</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 4) Здесь дальше идёт список карточек… -->
+
+    <script src="scripts/include.js"></script>
+    <script>
+        const searchInput = document.querySelector('.search-input');
+        const filters = document.getElementById('filters');
+      
+        searchInput.addEventListener('focus', () => {
+          filters.classList.remove('hidden');
+        });
+      </script>
+      
+</body>
+
+
+</html>
